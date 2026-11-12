@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Rumble Lane</title>
+<meta name="description" content="Rumble Lane — an original 2.5D arena brawler for the browser. Versus, campaign and survival modes for one or two players.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game"></canvas>
+  <div id="ui"></div>
+  <div id="touch" hidden>
+    <div class="pad">
+      <button data-k="KeyW" class="u">▲</button><button data-k="KeyA" class="l">◀</button>
+      <button data-k="KeyD" class="r">▶</button><button data-k="KeyS" class="d">▼</button>
+    </div>
+    <div class="acts">
+      <button data-k="KeyH" class="def">DEF</button><button data-k="KeyG" class="jmp">JUMP</button><button data-k="KeyF" class="atk">ATK</button>
+    </div>
+    <button id="tpause">II</button>
+  </div>
+</div>
+<script src="js/core.js"></script>
+<script src="js/data.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
